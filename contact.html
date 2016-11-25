@@ -1,42 +1,64 @@
-<!DOCTYPE html>
+
 <html>
 <head>
-	<title>Robson Barbosa</title>
-	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta charset="UTF-8">
+	<title>Contact | Robson Barbosa</title>
 	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
-	
 </head>
 <body>
-<div class="top">
-<h1>Robson Barbosa</h1>
-<nav>
-<a href="index.html">About </a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;
-<a href="portfolio.html">Portfolio</a>&nbsp;&nbsp;&nbsp;| &nbsp;
-<a href="contact.html">Contact</a> 
-</nav>
-</div>
+<div class="wrapper">
+	<header id="masthead">
+		<div class="container">
+			<a href="index.html" id="logo">Rob Barbosa</a>
+			<nav>
+				<a href="index.html">About</a>
+				<a href="portfolio.html">Portfolio</a>
+				<a href="contact.html">Contact</a>
+			</nav>
+		</div>
+	</header>
 
-<div class="connect">Connect with Me <br><hr class="conline">
-<a href="https://www.facebook.com/robson.barbosa.146"><img src="assets/images/fb_icon_325x325.png" width="55" height="55" alt="Facebook"></a>
-<a href="https://github.com/robbrasil"><img src="assets/images/GitHub_logo.png" width="55" height="55" alt="Github"></a>
-<a href="https://www.linkedin.com/in/robson-barbosa-63308a12b"><img src="assets/images/LinkedIn_logo.png" width="55" height="55" alt="Linkedin"></a>
-</div>
+	<div id="main-container" class="container">
+		<section class="main-section">
+			<h1>Contact</h1>
 
-<br class="clearfix">
-<div class="contactbox">
-<h2>Contact</h2>
-<br>
-<hr>
-<form>
-<label>Name</label><br>
-<input type="text" name="John Smith" placeholder="John Smith"><br>
-<label>Email</label><br>
-<input type="text" name="example@gmail.com" placeholder="example@gmail.com"><br>
-<label>Message</label><br>
-<textarea rows="14" cols="83" name="Message"></textarea>
-</form>
-</div>
-<footer><hr class="greenline">&copy; Copyright 2016 Robson Barbosa</footer>
+			<form id="contact-form">
+				<ol>
+					<li>
+						<label for="name">Name</label>
+						<input type="text" id="name" name="name" placeholder="John Smith" required="required">
+					</li>
+					<li>
+						<label for="email">Email</label>
+						<input type="email" id="email" name="email" placeholder="example@gmail.com" required="required">
+					</li>
+					<li>
+						<label for="message">Message</label>
+						<textarea id="message" name="message" required="required"></textarea>
+					</li>
+				</ol>
+				<input type="submit">
+			</form>
+
+		</section>
+
+		<section class="sidebar">
+			<div id="connect">
+				<h2>Connect with Me</h2>
+
+        <a href="#"><img src="assets/images/GitHub_logo.png" class="social" alt="GitHub" /></a>
+        <a href="#"><img src="assets/images/linkedin-128.png" class="social" alt="LinkedIn" /></a>
+        <a href="#"><img src="assets/images/stackoverflow-128.png" class="social" alt="Stack Overflow" /></a>
+			</div>
+		</section>
+	</div>
+
+	<div class="footer">
+		<div class="container">
+			&copy; Copyright 2016 Robson Barbosa
+		</div>
+	</div>
+    </div>
 </body>
 </html>
